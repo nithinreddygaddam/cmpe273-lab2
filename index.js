@@ -38,8 +38,8 @@ function get(request, response) {
 function post(request, response) {
 	
 	// TODO: read 'name and email from the request.body'
-	var name=request.body.name;
-	var email=request.body.email;
+	var name = request.body.name;
+	var email = request.body.email;
 	// var newSessionId = login.login('xxx', 'xxx@gmail.com');
 	var newSessionId = login.login(name,email);
 	// TODO: set new session id to the 'session_id' cookie in the response
@@ -68,8 +68,8 @@ function del(request, response) {
 function put(request, response) {
 	console.log("PUT:: Re-generate new seesion_id for the same user");
 	// TODO: refresh session id; similar to the post() function
-	var name=request.body.name;
-	var email=request.body.email;
+	var name = request.body.name;
+	var email = request.body.email;
 	var newSessionId = login.login(name,email);
 	response.setHeader('Set-Cookie', 'session_id=' + newSessionId);
 	
