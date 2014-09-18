@@ -4,7 +4,7 @@
 function Login() {
 	// sessionId -> user map
 	this.sessionMap = {
-		99999 : { name: 'Foo', email: 'foo@bar.com' }
+		99999 : { name: 'Foo', email: 'food@bar.com' }
 	};
 }
 /**
